@@ -23,7 +23,7 @@ import in.nareshit.raghu.repo.SpecializationRepository;
 @DataJpaTest(showSql = true)
 @AutoConfigureTestDatabase(replace = Replace.NONE)
 @Rollback(false)
-@TestMethodOrder(OrderAnnotation.class)
+//@TestMethodOrder(OrderAnnotation.class)
 public class SpecializationRepositoryTest {
 	
 	@Autowired
@@ -53,5 +53,6 @@ public class SpecializationRepositoryTest {
 			fail("No data exis in Database");
 		}
 	}
+	
 	
 }
